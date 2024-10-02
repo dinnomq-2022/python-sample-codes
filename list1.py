@@ -9,4 +9,4 @@ def count_containing(list, character):
             print(character,"exists in string", item)
             count+=1
     return count
-count_containing(["Dinno","Gino"],"in")
+count_containing(["Winona","Winonna"],"in")
