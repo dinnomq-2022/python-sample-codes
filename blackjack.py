@@ -35,4 +35,4 @@ def deal(number):
 
 shuffle()
 card = deal(1)[0]
-print(card)
+print(card[1]["value"])
