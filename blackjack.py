@@ -12,11 +12,16 @@ for suit in suits:
 def shuffle():
     random.shuffle(cards)
 
-def deal():
-    card = cards.pop()
-    return card
+def deal(number):
+    cards_dealt = []
+    for x in range(number):
+        card = cards.pop()
+        cards_dealt.append(card)
+    return cards_dealt
 
 shuffle()
-cards = deal()
-print(cards)
+cards_dealt = deal(2)
+card1 = cards_dealt[0]
+card2 = cards_dealt[1]
+print(card1,card2)
   
