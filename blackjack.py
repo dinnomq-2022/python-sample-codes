@@ -21,7 +21,9 @@ def deal(number):
 
 shuffle()
 cards_dealt = deal(2)
-card1 = cards_dealt[0]
-card2 = cards_dealt[1]
-print(card1,card2)
+card = cards_dealt[0]
+rank = card[1]
+
+print(card)
+print(rank)
   
