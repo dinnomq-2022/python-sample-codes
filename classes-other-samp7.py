@@ -9,7 +9,11 @@ If the denominator of the calling object is 0, return None.
 class Fraction:
     def __init__(self, n, d):
         if d == 0:
-             raise ValueError("Denominator cannot be zero.")
+            try:
+                raise ValueError
+            except ValueError:
+                print("Denominator cannot be zero.")
+            
         self.num = n
         self.den = d
 
@@ -17,6 +21,9 @@ class Fraction:
         if self.num == 0:
             return None
         return Fraction(self.den, self.num)
+
+    def __str__(self):
+        return " "
     
 f = Fraction(3, 10)
 g = f.inverse()
